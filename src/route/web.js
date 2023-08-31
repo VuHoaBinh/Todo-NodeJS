@@ -1,11 +1,13 @@
 const express = require('express');
-
+const homeController = require('../controllers/homeController');
 
 let router = express.Router();
 
 let initialWebRoutes = (app)=>{
-    router.get('/',(req,res)=>{
-        return res.send("hello nodeJS hehe");
+    router.get('/',homeController.getHomePage);
+
+    router.get('/binh',(req,res)=>{
+        return res.send("hello Binh");
     });
 
 

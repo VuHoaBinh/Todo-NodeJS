@@ -21,6 +21,6 @@ let port = process.env.PORT || 6969;
 
 app.listen(port,()=>{
     // call back
-    console.log("successfully with nodeJS on the port" + port);
+    console.log("successfully with nodeJS on the port: " + port);
 });
 
