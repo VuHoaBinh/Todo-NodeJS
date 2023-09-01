@@ -12,3 +12,17 @@
 -> link: https://sequelize.org/docs/v6/other-topics/migrations/#installing-the-cli
 ->link: https://mherman.org/blog/node-postgres-sequelize/
 
+## Create Model
+`npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string`
+
+## install mysql2
+`npm install --save mysql2@2.2.5`
+
+## running migrations
+`npx sequelize-cli db:migrate`
+
+## Creating the first Seed
+`npx sequelize-cli seed:generate --name demo-user`
+
+## running seeds
+`npx sequelize-cli db:seed:all`
